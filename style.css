@@ -1,40 +1,152 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   color: #333;
+  background-color: #f9f9f9;
 }
 
-header {
-  background: magenta;
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
   color: white;
-  padding: 1rem 0;
-  text-align: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-header nav ul {
-  list-style: none;
-  padding: 0;
+header nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-header nav ul li {
-  display: inline;
-  margin: 0 15px;
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
 }
 
-header nav ul li a {
-  color: white;
+.nav-links a {
   text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-section {
+.nav-links a:hover {
+  color: #ff007f;
+}
+
+.theme-toggle {
+  background: #ff007f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 2rem;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  background: #ff007f;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ff4080;
+}
+
+/* Projects Section */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
   padding: 2rem;
 }
 
+.project {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+}
+
+.project img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.section-title {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+  color: #ff007f;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 1rem 0;
-  background: magenta;
+  padding: 1rem;
+  background: #333;
   color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+h1 {
+  font-size: 2.5rem; /* Ensure all project pages use the same size */
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem; /* Matches size on all pages */
 }
