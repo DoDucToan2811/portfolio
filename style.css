@@ -1,112 +1,40 @@
-/* Global Styles */
 body {
-  font-family: 'Playfair Display', serif;
-  background-color: #1a1b2f; /* Mystic dark background */
-  color: #e4e4ff; /* Light lavender text */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
-
-/* Header */
-.mystic-header {
-  background: linear-gradient(135deg, #3c1b7a, #1a1b2f); /* Purple gradient */
-  text-align: center;
-  padding: 6rem 1rem;
-  color: #e4e4ff;
-}
-
-.mystic-header h1 {
-  font-size: 3rem;
-  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.mystic-header p {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-}
-
-.mystic-button {
-  margin-top: 2rem;
-  padding: 0.75rem 2rem;
-  background: #6b4eff;
+header {
+  background: #333;
   color: #fff;
-  border: none;
-  border-radius: 25px;
-  font-size: 1rem;
-  text-transform: uppercase;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
   text-decoration: none;
-  box-shadow: 0px 5px 15px rgba(107, 78, 255, 0.5);
-  transition: 0.3s;
 }
 
-.mystic-button:hover {
-  background: #916cff;
-  box-shadow: 0px 10px 20px rgba(145, 108, 255, 0.7);
-}
-
-/* Section Styling */
 section {
-  padding: 4rem 1rem;
-  text-align: center;
-}
-
-section h2 {
-  color: #e4e4ff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.about-section {
-  background: rgba(60, 27, 122, 0.8); /* Semi-transparent purple */
-  color: #fff;
-  padding: 4rem;
-  border-radius: 10px;
-  margin: 2rem auto;
-  max-width: 800px;
-}
-
-.projects-section .project-card {
-  background: #252447;
-  color: #e4e4ff;
-  border-radius: 8px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-  padding: 1.5rem;
-  margin: 1rem auto;
-  max-width: 600px;
-}
-
-.skills-section {
-  background: #2e2d4f;
-  color: #fff;
   padding: 2rem;
-  border-radius: 10px;
-}
-
-.skills-section span {
-  display: inline-block;
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  background: #6b4eff;
-  color: #fff;
-  border-radius: 50px;
-  box-shadow: 0px 4px 8px rgba(107, 78, 255, 0.5);
-}
-
-.contact-section {
-  background: linear-gradient(135deg, #3c1b7a, #6b4eff);
-  color: #fff;
-  padding: 3rem;
-  border-radius: 10px;
-}
-
-.contact-section form {
-  max-width: 600px;
-  margin: auto;
 }
 
 footer {
   text-align: center;
-  padding: 2rem 1rem;
-  background: #1a1b2f;
-  color: #e4e4ff;
-  font-size: 0.9rem;
+  padding: 1rem 0;
+  background: #333;
+  color: #fff;
 }
