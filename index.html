@@ -1,86 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Do Duc Toan Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Do Duc Toan's Portfolio - AI & Web Development">
+    <meta name="keywords" content="AI, Web Development, Portfolio, React, Firebase, Node.js">
+
+    <title>Do Duc Toan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
+
 <body>
-  <header>
-    <nav>
-      <h1 class="logo">Do Duc Toan</h1>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button id="theme-toggle" class="theme-toggle">Dark Mode</button>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <h1 class="logo">Do Duc Toan</h1>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#pingpong">Ping Pong</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-  <section id="hero">
-    <div class="hero-grid">
-      <div class="hero-text">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Explore my journey as a developer, showcasing innovative projects in AI, web development, and technology.</p>
-        <a href="#projects" class="btn">Explore Projects</a>
-      </div>
-      <div class="hero-image">
-        <img src="images/image1.jpg" alt="Hero Image">
-      </div>
-    </div>
-  </section>
+            <button id="theme-toggle" class="theme-toggle">Dark Mode</button>
+        </nav>
+    </header>
 
-  <section id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="project-list">
-      <!-- Chatbot Project -->
-      <div class="project" data-aos="fade-up">
-        <h3><a href="chatbot.html">Chatbot Application</a></h3>
-        <img src="images/image1.jpg" alt="Chatbot Project">
-        <p>A conversational AI chatbot integrated with OpenAI API, Firebase, and Chainlit.</p>
-        <a href="chatbot.html" class="btn">View Details</a>
-      </div>
-  
-      <!-- Mysthos Mysterium Project -->
-      <div class="project" data-aos="fade-up">
-        <h3><a href="mysthos.html">Mysthos Mysterium</a></h3>
-        <img src="images/image2.jpg" alt="Mysthos Mysterium Library Web App">
-        <p>A dynamic library web application designed to provide users with an interactive and engaging way to explore and manage books.</p>
-        <a href="mysthos.html" class="btn">View Details</a>
-      </div>
-      
-  
-      <!-- Smart Attendance Check Project -->
-      <div class="project" data-aos="fade-up">
-        <h3><a href="attendance.html">Smart Attendance Check</a></h3>
-        <img src="images/image3.jpg" alt="Smart Attendance Check Project">
-        <p>An AI-powered attendance system leveraging face recognition and anti-spoofing.</p>
-        <a href="attendance.html" class="btn">View Details</a>
-      </div>
-    </div>
-  </section>
+    <section id="hero">
+        <div class="hero-grid">
+            <div class="hero-text">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Explore my journey as a developer, showcasing innovative projects in AI, web development, and technology.</p>
+                <a href="#projects" class="btn">Explore Projects</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/image1.jpg" alt="Hero Image">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-list">
+            <!-- Chatbot Project -->
+            <div class="project" data-aos="flip-left">
+                <h3><a href="chatbot.html">Chatbot Application</a></h3>
+                <img src="images/image1.jpg" alt="Chatbot Project">
+                <p>A conversational AI chatbot integrated with OpenAI API, Firebase, and Chainlit.</p>
+                <a href="chatbot.html" class="btn">View Details</a>
+            </div>
+
+            <!-- Mysthos Mysterium Project -->
+            <div class="project" data-aos="flip-left">
+                <h3><a href="mysthos.html">Mysthos Mysterium</a></h3>
+                <img src="images/image2.jpg" alt="Mysthos Mysterium Library Web App">
+                <p>A dynamic library web application designed to provide users with an interactive and engaging way to explore and manage books.</p>
+                <a href="mysthos.html" class="btn">View Details</a>
+            </div>
 
 
-  <section id="about">
-    <h2 class="section-title">About Me</h2>
-    <p>Hi, I'm Do Duc Toan! I am a passionate software developer with expertise in AI, web development, and innovative technologies.</p>
-  </section>
+            <!-- Smart Attendance Check Project -->
+            <div class="project" data-aos="flip-left">
+                <h3><a href="attendance.html">Smart Attendance Check</a></h3>
+                <img src="images/image3.jpg" alt="Smart Attendance Check Project">
+                <p>An AI-powered attendance system leveraging face recognition and anti-spoofing.</p>
+                <a href="attendance.html" class="btn">View Details</a>
+            </div>
 
-  <section id="contact">
-    <h2 class="section-title">Contact</h2>
-    <p>Email: doductoan28112003@gmai.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/toan-do-duc-96024132a/" target="_blank">Your LinkedIn</a></p>
-  </section>
 
-  <footer>
-    <p>© 2025 Do Duc Toan</p>
-  </footer>
 
-  <script src="script.js"></script>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>Hi, I'm Do Duc Toan! I am a passionate software developer with expertise in AI, web development, and innovative technologies.</p>
+    </section>
+    <section id="pingpong">
+        <h2 class="section-title">🎮 Play Ping Pong</h2>
+        <div class="pingpong-container" data-aos="flip-left">
+            <h3>Ready to Play?</h3>
+            <a href="pingpong.html">
+                <img src="images/pingpong.jpg" alt="Ping Pong Game">
+            </a>
+            <p>Click the button below to enjoy an exciting 2-player Ping Pong match!</p>
+            <a href="pingpong.html" class="play-button">Play Now</a>
+        </div>
+    </section>
+
+
+
+    <section id="contact">
+        <h2 class="section-title">📬 Get in Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:doductoan28112003@gmail.com">doductoan28112003@gmail.com</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/DoDucToan2811" target="_blank">GitHub Profile</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/toan-do-duc-96024132a/" target="_blank">LinkedIn Profile</a></p>
+            </div>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xanqbqbe" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>© 2025 Do Duc Toan</p>
+    </footer>
+
+    <script defer src="script.js"></script>
+
+
 </body>
+
 </html>
