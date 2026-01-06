@@ -486,6 +486,18 @@ canvas {
 }
 
 
+/* Orientation helpers toggled by JS */
+
+body.landscape .pingpong-container {
+    max-width: 900px;
+}
+
+body.portrait .pingpong-container {
+    max-width: 420px;
+    padding: 1rem;
+}
+
+
 /* Mobile responsive adjustments */
 
 @media (max-width: 768px) {
