@@ -102,6 +102,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 rightPaddle.x = canvas.width - (40 * scale);
                 leftPaddle.y = Math.max(0, Math.min(canvas.height - PADDLE_HEIGHT, leftRatioY * canvas.height));
                 rightPaddle.y = Math.max(0, Math.min(canvas.height - PADDLE_HEIGHT, rightRatioY * canvas.height));
+                // Ensure motion properties match landscape orientation
+                leftPaddle.dy = typeof leftPaddle.dy === 'number' ? leftPaddle.dy : 0;
+                rightPaddle.dy = typeof rightPaddle.dy === 'number' ? rightPaddle.dy : 0;
+                leftPaddle.dx = 0;
+                rightPaddle.dx = 0;
             } else {
                 // preserve horizontal positions as ratios
                 const leftRatioX = leftPaddle.x / oldWidth;
@@ -110,6 +115,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 rightPaddle.x = Math.max(0, Math.min(canvas.width - PADDLE_WIDTH, rightRatioX * canvas.width));
                 leftPaddle.y = 30 * scale;
                 rightPaddle.y = canvas.height - (40 * scale) - PADDLE_HEIGHT;
+                // Ensure motion properties match portrait orientation
+                leftPaddle.dx = typeof leftPaddle.dx === 'number' ? leftPaddle.dx : 0;
+                rightPaddle.dx = typeof rightPaddle.dx === 'number' ? rightPaddle.dx : 0;
+                leftPaddle.dy = 0;
+                rightPaddle.dy = 0;
             }
 
             ball.x = Math.max(BALL_SIZE / 2, Math.min(canvas.width - BALL_SIZE / 2, ballRatioX * canvas.width));
